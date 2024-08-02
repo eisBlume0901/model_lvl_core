@@ -1,0 +1,4 @@
+To check permissions using python manage.py shell
+
+>>> from django.contrib.auth.models import Permission
+>>> Permission.objects.filter(user__username="staff")
